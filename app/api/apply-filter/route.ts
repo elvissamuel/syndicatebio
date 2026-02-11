@@ -1,8 +1,7 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { getGoogleAccessToken } from '@/lib/google-auth'
-
 export const dynamic = "force-dynamic";
 
+import { NextRequest, NextResponse } from 'next/server'
+import { getGoogleAccessToken } from '@/lib/google-auth'
 
 export async function POST(request: NextRequest) {
   try {
