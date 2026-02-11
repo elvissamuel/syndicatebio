@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 157.9569 175.343">
+  <defs>
+    <linearGradient id="linear-gradient" x1="14.3012" y1="43.2792" x2="157.9569" y2="43.2792" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffaaf7"/>
+      <stop offset="0.2437" stop-color="#ffabf5"/>
+      <stop offset="0.3881" stop-color="#ffadec"/>
+      <stop offset="0.5067" stop-color="#ffb0de"/>
+      <stop offset="0.6112" stop-color="#ffb5ca"/>
+      <stop offset="0.7065" stop-color="#ffbbb0"/>
+      <stop offset="0.795" stop-color="#ffc390"/>
+      <stop offset="0.8784" stop-color="#fecd69"/>
+      <stop offset="0.9557" stop-color="#fed73e"/>
+      <stop offset="1" stop-color="#fede22"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" y1="133.3218" x2="143.6556" y2="133.3218" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffaaf7"/>
+      <stop offset="1" stop-color="#00e2ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0" y1="39.5159" x2="143.6556" y2="39.5159" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-4" x1="14.3012" y1="135.8271" x2="157.9569" y2="135.8271" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffaaf7"/>
+      <stop offset="0.1056" stop-color="#ffabf1"/>
+      <stop offset="0.245" stop-color="#ffafe0"/>
+      <stop offset="0.4035" stop-color="#ffb6c5"/>
+      <stop offset="0.576" stop-color="#ffc09f"/>
+      <stop offset="0.7598" stop-color="#fecc6e"/>
+      <stop offset="0.9504" stop-color="#feda33"/>
+      <stop offset="1" stop-color="#fede22"/>
+    </linearGradient>
+  </defs>
+  <title>syndicate-logo-full-color-rgb</title>
+  <g id="full-rgb">
+    <g>
+      <path id="fullLogo" d="M152.959,40.2608c-6.883-10.8153-18.2841-21.3224-32.0182-28.892-3.0506,2.2231-7.1988,2.2755-10.8319.6293-.3111-.1383-.5346-.2382-.6892-.3079-.5274-.2087-1.0563-.4138-1.59-.6071q-1.41-.5113-2.8442-.9516-2.8761-.8843-5.8285-1.49A50.2978,50.2978,0,0,0,88.1335,7.54,76.86,76.86,0,0,0,63.79,10.8619,106.4753,106.4753,0,0,0,32.9058,25.0943c12.1326-.2917,28.893,2.8955,46.2609,17.3608L112.7314,70.41s21.0221,17.0933,37.1961,3.1427C160.44,64.4855,159.737,50.7354,152.959,40.2608Z" style="fill: url(#linear-gradient)"/>
+      <path id="fullLogo-2" data-name="fullLogo" d="M57.6757,168.9272a52.066,52.066,0,0,0,21.112.6,93.2535,93.2535,0,0,0,21.4436-7.1692c7.8462-3.6648,15.3874-7.9265,22.9755-12.0944-11.9575-.07-27.9118-3.6294-44.4166-17.3758L45.2255,104.9326S24.2034,87.8392,8.0293,101.79c-10.5127,9.0676-9.8094,22.8177-3.0314,33.2923,8.978,14.1074,25.6374,27.6949,45.1459,34.9123A10.2606,10.2606,0,0,1,57.6757,168.9272Z" style="fill: url(#linear-gradient-2)"/>
+      <path id="fullLogo-3" data-name="fullLogo" d="M4.9979,40.2608C-1.78,50.7354-2.4834,64.4855,8.0294,73.5531c16.174,13.9506,37.196-3.1427,37.196-3.1427L78.79,42.4551C112.3549,14.5,143.6556,28.6633,143.6556,28.6633A87.498,87.498,0,0,0,78.79,0C47.8287,0,18.1606,19.5779,4.9979,40.2608Z" style="fill: url(#linear-gradient-3)"/>
+      <path id="fullLogo-4" data-name="fullLogo" d="M152.959,135.0821c6.778-10.4745,7.4812-24.2247-3.0315-33.2923-16.174-13.9506-37.1961,3.1428-37.1961,3.1428L79.1667,132.8879C45.602,160.8432,14.3012,146.68,14.3012,146.68A87.4986,87.4986,0,0,0,79.1667,175.343C110.1281,175.343,139.7962,155.765,152.959,135.0821Z" style="fill: url(#linear-gradient-4)"/>
+    </g>
+  </g>
+</svg>

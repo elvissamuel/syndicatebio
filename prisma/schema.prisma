@@ -1,0 +1,52 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Submission {
+  id               Int       @id @default(autoincrement())
+  username         String
+  message          String
+  image_url        String?   // nullable
+  filter_applied   String    @default("none")
+  engagement_count Int       @default(0)
+  moderation_status String   @default("approved")
+  created_at       DateTime  @default(now())
+
+  engagements      Engagement[]
+  moderationLogs   ModerationLog[]
+
+  @@map("submissions")
+}
+
+model Engagement {
+  id            Int        @id @default(autoincrement())
+  submission_id Int
+  user_id       String
+  type          String
+
+  submission    Submission @relation(fields: [submission_id], references: [id])
+
+  @@map("engagements")
+}
+
+model ModerationLog {
+  id            Int        @id @default(autoincrement())
+  submission_id Int
+  action        String
+  reason        String
+  created_at    DateTime   @default(now())
+
+  submission    Submission @relation(fields: [submission_id], references: [id])
+
+  @@map("moderation_logs")
+}

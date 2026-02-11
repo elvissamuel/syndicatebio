@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* Palette
+      #174B10 (primary)
+      #3A3F6A (secondary)
+      #FC9F92 (accent)
+      #F5F5F7 (background)
+      #FFFFFF (surface)
+      #465054 (foreground)
+    */
+    --background: 240 11.1% 96.5%; /* #F5F5F7 */
+    --foreground: 197.1 9.1% 30.2%; /* #465054 */
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 197.1 9.1% 30.2%; /* #465054 */
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 197.1 9.1% 30.2%; /* #465054 */
+    --primary: 112.9 64.8% 17.8%; /* #174B10 */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary: 233.8 29.3% 32.2%; /* #3A3F6A */
+    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+    --muted: 240 11.1% 96.5%; /* #F5F5F7 */
+    --muted-foreground: 197.1 9.1% 45%; /* Lighter version of #465054 for better readability */
+    --accent: 7.4 94.6% 78%; /* #FC9F92 */
+    --accent-foreground: 197.1 9.1% 25%; /* Darker text for better contrast on light accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 11.1% 90%;
+    --input: 0 0% 100%; /* #FFFFFF */
+    --ring: 112.9 64.8% 17.8%; /* #174B10 */
+    --chart-1: 112.9 64.8% 17.8%; /* green */
+    --chart-2: 233.8 29.3% 32.2%; /* indigo */
+    --chart-3: 7.4 94.6% 78%; /* coral */
+    --chart-4: 197.1 9.1% 30.2%; /* slate */
+    --chart-5: 240 11.1% 96.5%; /* light */
+    --radius: 0.5rem;
+    --sidebar-background: 240 11.1% 96.5%;
+    --sidebar-foreground: 197.1 9.1% 30.2%;
+    --sidebar-primary: 112.9 64.8% 17.8%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 7.4 94.6% 78%;
+    --sidebar-accent-foreground: 233.8 29.3% 32.2%;
+    --sidebar-border: 240 11.1% 90%;
+    --sidebar-ring: 112.9 64.8% 17.8%;
+  }
+  .dark {
+    /* Dark theme using your color palette */
+    --background: 197.1 9.1% 8%; /* Darker version of #465054 */
+    --foreground: 240 11.1% 96.5%; /* #F5F5F7 */
+    --card: 197.1 9.1% 12%; /* Dark card background */
+    --card-foreground: 240 11.1% 96.5%; /* #F5F5F7 */
+    --popover: 197.1 9.1% 12%;
+    --popover-foreground: 240 11.1% 96.5%;
+    --primary: 112.9 64.8% 25%; /* Slightly lighter green for dark mode */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --secondary: 233.8 29.3% 25%; /* Darker version of #3A3F6A */
+    --secondary-foreground: 240 11.1% 96.5%; /* #F5F5F7 */
+    --muted: 197.1 9.1% 15%;
+    --muted-foreground: 240 11.1% 70%; /* Lighter muted text */
+    --accent: 7.4 94.6% 70%; /* Slightly darker coral for dark mode */
+    --accent-foreground: 197.1 9.1% 20%; /* Dark text on light accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 197.1 9.1% 20%;
+    --input: 197.1 9.1% 15%;
+    --ring: 112.9 64.8% 25%; /* Primary green */
+    --chart-1: 112.9 64.8% 25%; /* green */
+    --chart-2: 233.8 29.3% 25%; /* indigo */
+    --chart-3: 7.4 94.6% 70%; /* coral */
+    --chart-4: 197.1 9.1% 30.2%; /* slate */
+    --chart-5: 240 11.1% 50%; /* light */
+    --sidebar-background: 197.1 9.1% 10%;
+    --sidebar-foreground: 240 11.1% 96.5%;
+    --sidebar-primary: 112.9 64.8% 25%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 7.4 94.6% 70%;
+    --sidebar-accent-foreground: 197.1 9.1% 20%;
+    --sidebar-border: 197.1 9.1% 20%;
+    --sidebar-ring: 112.9 64.8% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
